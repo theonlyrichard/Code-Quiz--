@@ -60,3 +60,12 @@ function newQuiz() {
 
     showQuiz();
 };
+
+function startQuiz() {
+    introEl.style.display = "none";
+    questionsEl.style.display = "block";
+    questionCount = 0;
+
+    setTime();
+    setQuestion(questionCount);
+}
